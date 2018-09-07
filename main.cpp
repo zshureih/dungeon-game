@@ -2,6 +2,8 @@
 #include <iostream>
 #include "game.hpp"
 #include "space.hpp"
+
+
 using namespace std;
 
 int main()
@@ -57,6 +59,7 @@ int main()
       delete gameIO;
       gameIO = NULL;
     }
+    
     if(input == 2)
       playAgain = false;
   } while(playAgain);
