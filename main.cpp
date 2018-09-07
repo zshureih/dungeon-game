@@ -55,11 +55,11 @@ int main()
 
       if(again == 'n')
         playAgain = false;
-
-      delete gameIO;
-      gameIO = NULL;
+      else
+        delete gameIO;
+        gameIO = new Game();
     }
-    
+
     if(input == 2)
       playAgain = false;
   } while(playAgain);
